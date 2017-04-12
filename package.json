@@ -1,0 +1,29 @@
+{
+  "name": "boot-canvas-proj",
+  "version": "1.0.0",
+  "description": "boot a canvas project",
+  "main": "index.js",
+  "scripts": {
+    "start":"budo index.js:bundle.js --live --open",
+    "build": "browserify index.js | uglifyjs -m -c warnings=false > bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexandreXavier/boot-canvas-proj.git"
+  },
+  "keywords": [
+    "canvas",
+    "npm"
+  ],
+  "author": "xani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexandreXavier/boot-canvas-proj/issues"
+  },
+  "homepage": "https://github.com/AlexandreXavier/boot-canvas-proj#readme",
+  "devDependencies": {
+    "browserify": "^14.3.0",
+    "budo": "^9.4.7",
+    "uglify-js": "^2.8.22"
+  }
+}
